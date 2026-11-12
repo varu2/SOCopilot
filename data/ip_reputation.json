@@ -1,0 +1,107 @@
+{
+  "203.0.113.45": {
+    "reputation": "malicious",
+    "category": "Known brute-force source",
+    "note": "Reported in multiple threat feeds"
+  },
+  "203.0.113.77": {
+    "reputation": "malicious",
+    "category": "Tor exit node",
+    "note": "Anonymizing network"
+  },
+  "198.51.100.23": {
+    "reputation": "suspicious",
+    "category": "Cloud hosting / VPS provider",
+    "note": "Frequently used for scanning; no corporate use"
+  },
+  "198.51.100.88": {
+    "reputation": "malicious",
+    "category": "Credential-stuffing botnet",
+    "note": "Seen attacking multiple organizations"
+  },
+  "192.0.2.14": {
+    "reputation": "suspicious",
+    "category": "Anonymous commercial VPN",
+    "note": "Shared exit IP"
+  },
+  "198.51.100.150": {
+    "reputation": "clean",
+    "category": "Residential ISP (India)",
+    "note": "No malicious history"
+  },
+  "198.51.100.151": {
+    "reputation": "clean",
+    "category": "Residential ISP (India)",
+    "note": "No malicious history"
+  },
+  "198.51.100.152": {
+    "reputation": "clean",
+    "category": "Residential ISP (India)",
+    "note": "No malicious history"
+  },
+  "192.0.2.60": {
+    "reputation": "clean",
+    "category": "Mobile carrier (India)",
+    "note": "Carrier-grade NAT; geolocation is unreliable"
+  },
+  "192.0.2.61": {
+    "reputation": "clean",
+    "category": "Mobile carrier (India)",
+    "note": "Carrier-grade NAT; geolocation is unreliable"
+  },
+  "192.0.2.90": {
+    "reputation": "clean",
+    "category": "Residential ISP (United States)",
+    "note": "No malicious history"
+  },
+  "192.0.2.101": {
+    "reputation": "clean",
+    "category": "Business ISP (Singapore)",
+    "note": "Hotel / business network"
+  },
+  "203.0.113.200": {
+    "reputation": "clean",
+    "category": "Corporate VPN egress node (US region)",
+    "note": "Company-owned"
+  },
+  "10.10.5.50": {
+    "reputation": "internal",
+    "category": "Vulnerability scanner",
+    "note": "Authorized scanning host; scans run nightly"
+  },
+  "10.10.40.5": {
+    "reputation": "internal",
+    "category": "Red team host",
+    "note": "Authorized penetration test window 2026-10-12 to 2026-10-14"
+  },
+  "10.10.30.8": {
+    "reputation": "internal",
+    "category": "Reporting application server",
+    "note": "Hosts the reporting app that uses svc_reports"
+  },
+  "10.10.20.15": {
+    "reputation": "internal",
+    "category": "IT admin workstation",
+    "note": "Assigned to sgupta"
+  },
+  "10.10.20.16": {
+    "reputation": "internal",
+    "category": "HR workstation",
+    "note": "Assigned to rkumar"
+  },
+  "10.10.20.22": {
+    "reputation": "internal",
+    "category": "Finance workstation (wks-fin-014)",
+    "note": "Assigned to dkhan"
+  },
+  "10.10.20.31": {
+    "reputation": "internal",
+    "category": "Engineering workstation (wks-eng-022)",
+    "note": "Assigned to mthomas"
+  },
+  "10.10.1.45": {
+    "reputation": "internal",
+    "category": "Corporate VPN address pool",
+    "note": "Authenticated VPN session"
+  }
+}

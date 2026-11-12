@@ -1,0 +1,182 @@
+{
+  "ALR-001": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Authorized vulnerability scanner"
+  },
+  "ALR-002": {
+    "label": "true_positive",
+    "expected_severity": "high",
+    "expected_mitre": "T1110.001",
+    "scenario": "Brute force from known malicious IP"
+  },
+  "ALR-003": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Typo, home ISP in user's usual country"
+  },
+  "ALR-004": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Service account password expired; app retrying"
+  },
+  "ALR-005": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Usual workstation, wrong password after change"
+  },
+  "ALR-006": {
+    "label": "true_positive",
+    "expected_severity": "high",
+    "expected_mitre": "T1110.003",
+    "scenario": "Password spraying from botnet IP"
+  },
+  "ALR-007": {
+    "label": "true_positive",
+    "expected_severity": "critical",
+    "expected_mitre": "T1110.001",
+    "scenario": "Brute force success on privileged account via Tor"
+  },
+  "ALR-008": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Approved business trip to Singapore"
+  },
+  "ALR-009": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Second login came via company VPN egress node"
+  },
+  "ALR-010": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Phone notification glitch, usual home ISP"
+  },
+  "ALR-011": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "User mistyped password after returning from leave"
+  },
+  "ALR-012": {
+    "label": "true_positive",
+    "expected_severity": "high",
+    "expected_mitre": "T1078",
+    "scenario": "HR user accessing finance DB at night, outside role"
+  },
+  "ALR-013": {
+    "label": "true_positive",
+    "expected_severity": "high",
+    "expected_mitre": "T1078",
+    "scenario": "Executive account used via anonymous VPN, no travel on record"
+  },
+  "ALR-014": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Authorized red team exercise"
+  },
+  "ALR-015": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Night on-call engineer from home ISP"
+  },
+  "ALR-016": {
+    "label": "true_positive",
+    "expected_severity": "high",
+    "expected_mitre": "T1078",
+    "scenario": "Account used from VPS provider right after normal login"
+  },
+  "ALR-017": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Approved change CHG-4471, from IT admin workstation"
+  },
+  "ALR-018": {
+    "label": "true_positive",
+    "expected_severity": "critical",
+    "expected_mitre": "T1078.002",
+    "scenario": "Service account abused from external VPS"
+  },
+  "ALR-019": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Phone mail app using old password after change"
+  },
+  "ALR-020": {
+    "label": "true_positive",
+    "expected_severity": "high",
+    "expected_mitre": "T1621",
+    "scenario": "MFA fatigue attack from botnet IP"
+  },
+  "ALR-021": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Approved maintenance CHG-4502, DBA via VPN"
+  },
+  "ALR-022": {
+    "label": "true_positive",
+    "expected_severity": "critical",
+    "expected_mitre": "T1021.001",
+    "scenario": "External RDP into finance DB from VPS"
+  },
+  "ALR-023": {
+    "label": "false_positive",
+    "expected_severity": "low",
+    "expected_mitre": "N/A",
+    "scenario": "Mobile carrier NAT, unreliable geolocation"
+  },
+  "ALR-024": {
+    "label": "true_positive",
+    "expected_severity": "high",
+    "expected_mitre": "T1110.004",
+    "scenario": "Credential stuffing against HR portal"
+  },
+  "ALR-025": {
+    "label": "true_positive",
+    "expected_severity": "critical",
+    "expected_mitre": "T1110.001",
+    "scenario": "Brute force success on CFO mailbox"
+  },
+  "ALR-026": {
+    "label": "true_positive",
+    "expected_severity": "critical",
+    "expected_mitre": "T1078",
+    "scenario": "Privileged account via Tor exit node"
+  },
+  "ALR-027": {
+    "label": "true_positive",
+    "expected_severity": "high",
+    "expected_mitre": "T1110.003",
+    "scenario": "Password spraying against VPN from VPS"
+  },
+  "ALR-028": {
+    "label": "true_positive",
+    "expected_severity": "high",
+    "expected_mitre": "T1078",
+    "scenario": "Engineer account via Tor exit node"
+  },
+  "ALR-029": {
+    "label": "true_positive",
+    "expected_severity": "high",
+    "expected_mitre": "T1110.001",
+    "scenario": "Brute force success from VPS"
+  },
+  "ALR-030": {
+    "label": "true_positive",
+    "expected_severity": "high",
+    "expected_mitre": "T1078.002",
+    "scenario": "Admin creds used from unexpected workstation at night"
+  }
+}

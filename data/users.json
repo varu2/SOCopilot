@@ -1,0 +1,107 @@
+{
+  "asharma": {
+    "role": "Finance Analyst",
+    "department": "Finance",
+    "privileged": false,
+    "normal_country": "IN",
+    "working_hours": "09:00-18:00 IST, Mon-Fri"
+  },
+  "dkhan": {
+    "role": "Finance Manager",
+    "department": "Finance",
+    "privileged": false,
+    "normal_country": "IN",
+    "working_hours": "09:00-18:00 IST, Mon-Fri"
+  },
+  "mthomas": {
+    "role": "Software Engineer",
+    "department": "Engineering",
+    "privileged": false,
+    "normal_country": "IN",
+    "working_hours": "10:00-19:00 IST, Mon-Fri"
+  },
+  "sgupta": {
+    "role": "IT Administrator",
+    "department": "IT",
+    "privileged": true,
+    "normal_country": "IN",
+    "working_hours": "09:00-18:00 IST, Mon-Fri"
+  },
+  "rkumar": {
+    "role": "HR Executive",
+    "department": "HR",
+    "privileged": false,
+    "normal_country": "IN",
+    "working_hours": "09:00-18:00 IST, Mon-Fri"
+  },
+  "vkrishna": {
+    "role": "Chief Financial Officer",
+    "department": "Executive",
+    "privileged": false,
+    "high_value_target": true,
+    "normal_country": "IN",
+    "known_travel": "none on record"
+  },
+  "lfernandes": {
+    "role": "Sales Manager",
+    "department": "Sales",
+    "privileged": false,
+    "normal_country": "IN",
+    "known_travel": "Singapore, 2026-10-08 to 2026-10-11 (approved business trip)"
+  },
+  "jwilson": {
+    "role": "Support Engineer",
+    "department": "Support",
+    "privileged": false,
+    "normal_country": "US",
+    "working_hours": "09:00-17:00 US Eastern"
+  },
+  "pnair": {
+    "role": "DevOps Engineer",
+    "department": "Engineering",
+    "privileged": false,
+    "normal_country": "IN",
+    "on_call": "2026-10-12 to 2026-10-19 (night on-call rotation)"
+  },
+  "nrao": {
+    "role": "Database Administrator",
+    "department": "IT",
+    "privileged": true,
+    "normal_country": "IN",
+    "working_hours": "09:00-18:00 IST, Mon-Fri"
+  },
+  "kdas": {
+    "role": "Marketing Executive",
+    "department": "Marketing",
+    "privileged": false,
+    "normal_country": "IN",
+    "password_last_changed": "2026-10-14"
+  },
+  "tmenon": {
+    "role": "Security Analyst",
+    "department": "Security",
+    "privileged": true,
+    "normal_country": "IN",
+    "working_hours": "24x7 shift rotation"
+  },
+  "svc_backup": {
+    "role": "Service account (backup jobs)",
+    "department": "IT",
+    "privileged": true,
+    "interactive_login_expected": false
+  },
+  "svc_reports": {
+    "role": "Service account (reporting application)",
+    "department": "IT",
+    "privileged": false,
+    "interactive_login_expected": false,
+    "password_expiry": "2026-10-06"
+  },
+  "administrator": {
+    "role": "Built-in local administrator",
+    "department": "IT",
+    "privileged": true,
+    "interactive_login_expected": false,
+    "note": "Interactive use is disabled by policy"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "vpn-gw-01": {
+    "type": "VPN gateway",
+    "criticality": "high",
+    "internet_facing": true
+  },
+  "sso-portal": {
+    "type": "SSO portal",
+    "criticality": "high",
+    "internet_facing": true
+  },
+  "hr-portal": {
+    "type": "HR web application",
+    "criticality": "medium",
+    "internet_facing": true
+  },
+  "mail-gw-01": {
+    "type": "Mail gateway",
+    "criticality": "high",
+    "internet_facing": true
+  },
+  "dc-01": {
+    "type": "Domain controller",
+    "criticality": "critical",
+    "internet_facing": false
+  },
+  "fin-db-01": {
+    "type": "Finance database server",
+    "criticality": "critical",
+    "internet_facing": false,
+    "allowed_departments": [
+      "Finance",
+      "IT"
+    ],
+    "approved_maintenance": "2026-10-16 23:00 to 2026-10-17 01:00 IST (change CHG-4502)"
+  },
+  "bkp-srv-01": {
+    "type": "Backup server",
+    "criticality": "high",
+    "internet_facing": false,
+    "approved_maintenance": "2026-10-14 22:00 to 23:59 IST (change CHG-4471)"
+  },
+  "jump-01": {
+    "type": "Bastion / jump host",
+    "criticality": "high",
+    "internet_facing": false
+  },
+  "app-prod-03": {
+    "type": "Production application server",
+    "criticality": "high",
+    "internet_facing": false
+  },
+  "file-srv-02": {
+    "type": "File server",
+    "criticality": "medium",
+    "internet_facing": false
+  }
+}
