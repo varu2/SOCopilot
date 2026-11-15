@@ -2,6 +2,7 @@ import json
 import os
 import re
 import sys
+import time
 
 from dotenv import load_dotenv
 from openai import OpenAI
@@ -11,10 +12,18 @@ from enrichment import load_alerts, load_lookups, enrich_alert
 load_dotenv()
 
 MODEL = os.environ.get("LLM_MODEL", "")
+PROMPT_VERSION = "v2"
 
 SYSTEM_PROMPT = """You are a Tier-1 SOC analyst assistant. You receive one authentication-related \
 security alert plus context about the user, the destination asset and the source IP. \
 Decide whether the alert is a genuine threat (true_positive) or benign activity (false_positive).
+
+Definitions: true_positive means the activity is genuinely malicious, unauthorized or a policy \
+violation that needs investigation or response. false_positive means the alert fired but the \
+activity is benign (for example authorized activity, user error or a misconfiguration). \
+Needing a fix or follow-up does not by itself make an alert a true_positive. \
+Your verdict must agree with your reasoning: if you identify a benign explanation, the verdict \
+is false_positive.
 
 How to reason:
 - Use only facts present in the input. Never invent details. If a context block says \
@@ -55,6 +64,7 @@ def get_client():
         base_url=os.environ["LLM_BASE_URL"],
         api_key=os.environ["LLM_API_KEY"],
         max_retries=5,
+        timeout=60,
     )
 
 
@@ -104,6 +114,8 @@ if __name__ == "__main__":
     alerts = load_alerts()
     lookups = load_lookups()
     alert = alerts[index]
-    print(f"Triaging {alert['alert_id']} ({alert['rule_name']})\n")
+    print(f"Triaging {alert['alert_id']} ({alert['rule_name']}) | prompt {PROMPT_VERSION}\n")
+    start = time.time()
     result = triage_alert(enrich_alert(alert, lookups))
     print(json.dumps(result, indent=2))
+    print(f"\n(took {time.time() - start:.1f} seconds)")

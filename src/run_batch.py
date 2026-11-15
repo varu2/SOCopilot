@@ -61,7 +61,7 @@ def save(conn, run_id, alert_id, result, seconds, error=None):
 
 def main():
     # Pass an existing run id to resume a run; otherwise a new one is created
-    run_id = sys.argv[1] if len(sys.argv) > 1 else datetime.now().strftime("run_%Y%m%d_%H%M%S")
+    run_id = sys.argv[1] if len(sys.argv) > 1 else datetime.now().strftime(f"{triage.PROMPT_VERSION}_%Y%m%d_%H%M%S")
     alerts = load_alerts()
     lookups = load_lookups()
 

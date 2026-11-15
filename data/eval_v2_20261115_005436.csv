@@ -1,0 +1,31 @@
+alert_id,true_label,ai_verdict,verdict_correct,expected_severity,ai_severity,expected_mitre,ai_mitre,confidence,scenario
+ALR-001,false_positive,false_positive,True,low,low,N/A,N/A,95,Authorized vulnerability scanner
+ALR-002,true_positive,true_positive,True,high,high,T1110.001,T1110.001,99,Brute force from known malicious IP
+ALR-003,false_positive,false_positive,True,low,low,N/A,N/A,95,"Typo, home ISP in user's usual country"
+ALR-004,false_positive,false_positive,True,low,low,N/A,N/A,95,Service account password expired; app retrying
+ALR-005,false_positive,false_positive,True,low,low,N/A,N/A,95,"Usual workstation, wrong password after change"
+ALR-006,true_positive,true_positive,True,high,high,T1110.003,T1110.003,99,Password spraying from botnet IP
+ALR-007,true_positive,true_positive,True,critical,critical,T1110.001,T1110.001,99,Brute force success on privileged account via Tor
+ALR-008,false_positive,false_positive,True,low,low,N/A,N/A,95,Approved business trip to Singapore
+ALR-009,false_positive,false_positive,True,low,low,N/A,N/A,95,Second login came via company VPN egress node
+ALR-010,false_positive,false_positive,True,low,low,N/A,N/A,85,"Phone notification glitch, usual home ISP"
+ALR-011,false_positive,false_positive,True,low,low,N/A,N/A,90,User mistyped password after returning from leave
+ALR-012,true_positive,true_positive,True,high,high,T1078,T1078,95,"HR user accessing finance DB at night, outside role"
+ALR-013,true_positive,true_positive,True,high,critical,T1078,T1078.004,95,"Executive account used via anonymous VPN, no travel on record"
+ALR-014,false_positive,false_positive,True,low,low,N/A,N/A,95,Authorized red team exercise
+ALR-015,false_positive,false_positive,True,low,low,N/A,N/A,95,Night on-call engineer from home ISP
+ALR-016,true_positive,true_positive,True,high,high,T1078,T1078,95,Account used from VPS provider right after normal login
+ALR-017,false_positive,false_positive,True,low,low,N/A,N/A,95,"Approved change CHG-4471, from IT admin workstation"
+ALR-018,true_positive,true_positive,True,critical,high,T1078.002,T1078.002,95,Service account abused from external VPS
+ALR-019,false_positive,false_positive,True,low,low,N/A,N/A,85,Phone mail app using old password after change
+ALR-020,true_positive,true_positive,True,high,high,T1621,T1621,95,MFA fatigue attack from botnet IP
+ALR-021,false_positive,false_positive,True,low,low,N/A,N/A,95,"Approved maintenance CHG-4502, DBA via VPN"
+ALR-022,true_positive,true_positive,True,critical,critical,T1021.001,T1021.001,95,External RDP into finance DB from VPS
+ALR-023,false_positive,false_positive,True,low,low,N/A,N/A,95,"Mobile carrier NAT, unreliable geolocation"
+ALR-024,true_positive,true_positive,True,high,high,T1110.004,T1110.004,99,Credential stuffing against HR portal
+ALR-025,true_positive,true_positive,True,critical,critical,T1110.001,T1110.001,95,Brute force success on CFO mailbox
+ALR-026,true_positive,true_positive,True,critical,high,T1078,T1133,95,Privileged account via Tor exit node
+ALR-027,true_positive,true_positive,True,high,high,T1110.003,T1110.003,95,Password spraying against VPN from VPS
+ALR-028,true_positive,true_positive,True,high,high,T1078,T1090.003,95,Engineer account via Tor exit node
+ALR-029,true_positive,true_positive,True,high,high,T1110.001,T1110.001,95,Brute force success from VPS
+ALR-030,true_positive,true_positive,True,high,high,T1078.002,T1078.002,90,Admin creds used from unexpected workstation at night
